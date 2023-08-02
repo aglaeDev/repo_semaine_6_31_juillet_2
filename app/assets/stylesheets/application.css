@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+body{
+    background: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    display : flex; 
+    justify-content: space-between;
+    text-align: center;  
+}
+
+article { 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 80%;
+}
+ 
+
+/*section acceuil et potins*/
+.hero {
+    /* Sizing */
+    width: 100%;
+    height: calc(100vh - 56px);
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+
+    /* background part */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1611746872915-64382b5c76da);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Border styles */
+    border: 3px solid black;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 20px;
+
+    /* Background styles */
+    background-color: rgba(66, 63, 70, 0.8);
+}
+
+.gossips_part{
+    flex-direction: column;
+}
+
+.list-gossips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gossip {
+    padding: 20px;
+    width: 25%;
+    border: 2px #0B0301 solid;
+    margin : 10px;
+}
+
+
+
+
+/*section conctact*/
+.contact{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+p {
+  font-size: 10px;
+}
+.transition {
+  transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+}
+
+.one {
+  list-style: none;
+  padding: 0;
+  margin: 100px 0;
+}
+.one > li {
+  background: #FFFFFF;
+  border: 1px solid rgba(150,150,150,0.29);
+  box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  width: 250px;
+  height: 430px;
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+.one > li img {
+  margin-top: 60px;
+}
+.one > li:hover img {
+  margin-top: 30px;
+}
+.one > li:hover {
+  box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+}
+.one > li:hover span {
+  border-radius: 0;
+  bottom: -400px;
+}
+.one > li:hover h3 {
+  color: rgb(225, 214, 214);
+  margin-top: 25px;
+}
+.one > li .wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 250px;
+  height: 430px;
+}
+.one > li span {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  background: #4c3a36;
+  display: block;
+  position: absolute;
+  bottom: -300px;
+  left: -125px;
+}
+.one > li span img {
+  margin-top: 10px;
+  width: 50px;
+}
+.one > li span:hover {
+  background: #513d37;
+}
+.one > li h3 {
+  margin-top: 40px;
+  color: rgb(225, 214, 214);
+}
+.one > li h3 em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.one .social {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
+.one .social li {
+  opacity: 0;
+  display: inline-block;
+  padding: 5px;
+}
+.one > li:hover .social li {
+  opacity: 0.5;
+}
+.one .social li a {
+  cursor: pointer;
+  display: block;
+}
+.one .social li a:hover {
+  opacity: 0.5;
+}
+.one .social li img {
+    width: 24px;
+  }

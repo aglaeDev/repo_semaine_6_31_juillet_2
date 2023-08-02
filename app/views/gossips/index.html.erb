@@ -1,0 +1,22 @@
+<section class="hero">
+  <div class="hero-inner">
+    <h1>bienvenue</h1>
+    <h2>Crée un potin !</h2>
+    <p>Balance ton potin via le formulaire ci-dessous</p>
+    <a href="http://127.0.0.1:3000/gossips/new" class="btn">clique ici pour un nouveau potin</a>
+  </div>
+</section>
+<section class="gossips_part">
+    <article>
+          <h4> Voici la liste des potins </h4>
+          <div class="list-gossips">
+            <% @gossips.each_with_index do |gossip, index| %>
+            <!--  ----------------- -->
+            <div class="gossip">
+              <h5> <%= gossip.title %> </h5>        
+              <%= link_to "Potin N° #{gossip.id}", gossip_path(gossip.id)%>
+            </div> 
+          <% end %>
+        </div>
+    </article>
+</section>
