@@ -108,7 +108,10 @@ article {
     align-items: center;
     justify-content: center;
 }
-
+.image{
+    width: 240px;
+    height: 430px;
+}
 h2 {
   font-size: 50px;
   margin-bottom: 0px;
